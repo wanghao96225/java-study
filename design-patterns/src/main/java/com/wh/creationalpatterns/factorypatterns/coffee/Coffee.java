@@ -1,4 +1,4 @@
-package com.wh.creationalpatterns.factorypatterns.simplefactorypattern;
+package com.wh.creationalpatterns.factorypatterns.coffee;
 
 /**
  * 简单工厂 - 咖啡接口
@@ -13,12 +13,14 @@ public interface Coffee {
 
     /**
      * 加糖
+     * @param sweetness
      */
-    void addSugar();
+    void addSugar(int sweetness);
 
     /**
      * 加奶
+     * @param milk
      */
-    void addMilk();
+    void addMilk(int milk);
 
 }

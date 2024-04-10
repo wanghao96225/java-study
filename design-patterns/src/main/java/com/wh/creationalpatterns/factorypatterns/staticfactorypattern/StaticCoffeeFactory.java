@@ -1,15 +1,15 @@
-package com.wh.creationalpatterns.factorypatterns.simplefactorypattern;
+package com.wh.creationalpatterns.factorypatterns.staticfactorypattern;
 
 import com.wh.creationalpatterns.factorypatterns.coffee.AmericanCoffee;
 import com.wh.creationalpatterns.factorypatterns.coffee.Coffee;
 import com.wh.creationalpatterns.factorypatterns.coffee.LatteCoffee;
 
 /**
- * 简单工厂模式
+ * 静态工厂模式
  */
-public class SimpleCoffeeFactory {
+public class StaticCoffeeFactory {
 
-    public Coffee createCoffee(String type) {
+    public static Coffee createCoffee(String type) {
         Coffee coffee = null;
         if ("american".equals(type)) {
             coffee = new AmericanCoffee();
