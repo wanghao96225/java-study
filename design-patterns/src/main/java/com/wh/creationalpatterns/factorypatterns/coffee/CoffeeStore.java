@@ -1,9 +1,9 @@
 package com.wh.creationalpatterns.factorypatterns.coffee;
 
 import com.wh.creationalpatterns.factorypatterns.factorymethodfactorypatter.AmericanCoffeeFactory;
-import com.wh.creationalpatterns.factorypatterns.factorymethodfactorypatter.CoffeeFactory;
 import com.wh.creationalpatterns.factorypatterns.factorymethodfactorypatter.LatteCoffeeFactory;
 import com.wh.creationalpatterns.factorypatterns.simplefactorypattern.SimpleCoffeeFactory;
+import com.wh.creationalpatterns.factorypatterns.simplefactorypattern.SimpleCoffeeFactoryExtend;
 import com.wh.creationalpatterns.factorypatterns.staticfactorypattern.StaticCoffeeFactory;
 
 public class CoffeeStore {
@@ -22,6 +22,14 @@ public class CoffeeStore {
     public Coffee simpleOrderCoffee(String type) {
         SimpleCoffeeFactory simpleCoffeeFactory = new SimpleCoffeeFactory();
         return simpleCoffeeFactory.createCoffee(type);
+    }
+
+    /*
+        简单工厂模式扩展
+        可以通过工厂模式+配置文件的方式解除工厂对象和产品对象的耦合。在工厂类中加载配置文件中的全类名，并创建对象进行存储，客户端如果需要对象，直接进行获取即可。
+     */
+    public Coffee simpleOrderCoffeeExtend(String type) {
+        return SimpleCoffeeFactoryExtend.createCoffee(type);
     }
 
     /*
@@ -64,7 +72,10 @@ public class CoffeeStore {
 
     public static void main(String[] args) {
         CoffeeStore coffeeStore = new CoffeeStore();
-        Coffee coffee = coffeeStore.simpleOrderCoffee("american");
+//        Coffee coffee = coffeeStore.simpleOrderCoffee("american");
+//        System.out.println(coffee.getName());
+
+        Coffee coffee = coffeeStore.simpleOrderCoffeeExtend("american");
         System.out.println(coffee.getName());
     }
 }

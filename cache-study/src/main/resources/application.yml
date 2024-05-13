@@ -6,9 +6,18 @@ spring:
   data:
     redis:
       client-type: lettuce
+      #     单机模式
+      host: 127.0.0.1
+      port: 6379
+      password: 123456
+      #     哨兵模式
+      sentinel:
+        master: mymaster
+        nodes: 127.0.0.1:6379
+      #     集群模式
+      cluster:
+        nodes: 127.0.0.1:6379
       lettuce:
-        cluster:
-          nodes: 127.0.0.1:6379
         pool:
           # 最大活动连接数
           max-active: 8

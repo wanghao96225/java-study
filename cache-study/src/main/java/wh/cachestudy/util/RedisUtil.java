@@ -3,11 +3,8 @@ package wh.cachestudy.util;
 import com.alibaba.fastjson2.JSON;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
-import lombok.val;
-import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.RedisSystemException;
 import org.springframework.data.redis.connection.DataType;
-import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.connection.jedis.JedisConnection;
 import org.springframework.data.redis.connection.lettuce.LettuceConnection;
 import org.springframework.data.redis.core.*;
@@ -2460,7 +2457,6 @@ public class RedisUtil {
 //    /**
 //     * 提供一些基础功能支持
 //     *
-//     * @author JustryDeng
 //     */
 //    public class Helper {
 //
