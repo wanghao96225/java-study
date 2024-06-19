@@ -1,4 +1,4 @@
-package wh.cachestudy.config;
+package com.wh.cachestudy.config;
 
 import io.micrometer.common.util.StringUtils;
 import lombok.extern.slf4j.Slf4j;

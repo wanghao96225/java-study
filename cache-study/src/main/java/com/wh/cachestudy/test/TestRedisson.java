@@ -1,5 +1,7 @@
-package wh.cachestudy.test;
+package com.wh.cachestudy.test;
 
+import com.wh.cachestudy.annotations.RepeatSubmit;
+import com.wh.cachestudy.config.RedissonConfig;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RBatch;
@@ -7,7 +9,6 @@ import org.redisson.api.RLock;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import wh.cachestudy.config.RedissonConfig;
 
 import java.util.concurrent.TimeUnit;
 
@@ -25,6 +26,7 @@ public class TestRedisson {
     private RedissonConfig redissonConfig;
 
     @GetMapping("/testPipelined")
+    @RepeatSubmit(lockedTime = 30, timeUnit = TimeUnit.SECONDS)
     public void testPipelined() {
 
         RBatch batch = redissonConfig.initBean().createBatch();

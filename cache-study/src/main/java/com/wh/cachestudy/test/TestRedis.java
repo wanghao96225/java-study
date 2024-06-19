@@ -1,12 +1,11 @@
-package wh.cachestudy.test;
+package com.wh.cachestudy.test;
 
+import com.wh.cachestudy.util.RedisUtil;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import wh.cachestudy.config.RedissonConfig;
-import wh.cachestudy.util.RedisUtil;
 
 import java.time.Duration;
 import java.time.Instant;

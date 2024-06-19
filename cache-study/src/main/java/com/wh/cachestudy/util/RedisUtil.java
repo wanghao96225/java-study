@@ -1,4 +1,4 @@
-package wh.cachestudy.util;
+package com.wh.cachestudy.util;
 
 import com.alibaba.fastjson2.JSON;
 import jakarta.annotation.Resource;
