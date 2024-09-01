@@ -1,4 +1,4 @@
-package com.wh.creationalpatterns.factorypatterns.factorymethodfactorypatter;
+package com.wh.creationalpatterns.factorypatterns.factorymethodfactorypattern;
 
 import com.wh.creationalpatterns.factorypatterns.coffee.AmericanCoffee;
 import com.wh.creationalpatterns.factorypatterns.coffee.Coffee;

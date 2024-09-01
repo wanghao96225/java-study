@@ -1,7 +1,11 @@
-package com.wh.creationalpatterns.prototypepatter.cases.certificateofmerit;
+package com.wh.creationalpatterns.prototypepatterns.shallowcopy;
 
+/**
+ * 23种设计模式 - 原型模式 - 浅拷贝
+ */
 public class Certificate implements Cloneable {
 
+    // 姓名
     private String name;
 
     public String getName() {
@@ -12,6 +16,7 @@ public class Certificate implements Cloneable {
         this.name = name;
     }
 
+    // 展示
     public void show(){
         System.out.println(name + "同学:获得奖状");
     }

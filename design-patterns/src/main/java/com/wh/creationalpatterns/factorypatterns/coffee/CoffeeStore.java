@@ -1,11 +1,14 @@
 package com.wh.creationalpatterns.factorypatterns.coffee;
 
-import com.wh.creationalpatterns.factorypatterns.factorymethodfactorypatter.AmericanCoffeeFactory;
-import com.wh.creationalpatterns.factorypatterns.factorymethodfactorypatter.LatteCoffeeFactory;
+import com.wh.creationalpatterns.factorypatterns.factorymethodfactorypattern.AmericanCoffeeFactory;
+import com.wh.creationalpatterns.factorypatterns.factorymethodfactorypattern.LatteCoffeeFactory;
 import com.wh.creationalpatterns.factorypatterns.simplefactorypattern.SimpleCoffeeFactory;
 import com.wh.creationalpatterns.factorypatterns.simplefactorypattern.SimpleCoffeeFactoryExtend;
 import com.wh.creationalpatterns.factorypatterns.staticfactorypattern.StaticCoffeeFactory;
 
+/**
+ * 23种设计模式 - 工厂模式 - 咖啡店
+ */
 public class CoffeeStore {
 
     /*

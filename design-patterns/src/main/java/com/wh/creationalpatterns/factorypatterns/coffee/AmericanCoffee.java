@@ -1,7 +1,7 @@
 package com.wh.creationalpatterns.factorypatterns.coffee;
 
 /**
- * 简单工厂模式 - 美式咖啡
+ * 23种设计模式 - 简单工厂模式 - 美式咖啡
  */
 public class AmericanCoffee implements Coffee {
     @Override

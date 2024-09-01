@@ -1,5 +1,8 @@
-package com.wh.creationalpatterns.prototypepatter.prototypepatternimpl;
+package com.wh.creationalpatterns.prototypepatterns.prototypepattern;
 
+/**
+ * 23种设计模式 - 原型模式 - 原型类
+ */
 public class Realizetype implements Cloneable{
 
     /**

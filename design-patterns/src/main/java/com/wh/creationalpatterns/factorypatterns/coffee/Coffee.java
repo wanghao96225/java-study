@@ -1,7 +1,7 @@
 package com.wh.creationalpatterns.factorypatterns.coffee;
 
 /**
- * 简单工厂 - 咖啡接口
+ * 23种设计模式 - 简单工厂 - 咖啡接口
  */
 public interface Coffee {
 

@@ -1,8 +1,6 @@
 package com.wh.creationalpatterns.factorypatterns.simplefactorypattern;
 
-import com.wh.creationalpatterns.factorypatterns.coffee.AmericanCoffee;
 import com.wh.creationalpatterns.factorypatterns.coffee.Coffee;
-import com.wh.creationalpatterns.factorypatterns.coffee.LatteCoffee;
 
 import java.io.InputStream;
 import java.util.HashMap;
@@ -11,7 +9,7 @@ import java.util.Properties;
 import java.util.Set;
 
 /**
- * 简单工厂模式扩展
+ * 23种设计模式 - 工厂模式 - 简单工厂模式扩展
  */
 public class SimpleCoffeeFactoryExtend {
 

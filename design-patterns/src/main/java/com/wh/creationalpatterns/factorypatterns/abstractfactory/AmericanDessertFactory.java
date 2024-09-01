@@ -5,6 +5,9 @@ import com.wh.creationalpatterns.factorypatterns.coffee.Coffee;
 import com.wh.creationalpatterns.factorypatterns.dessert.Dessert;
 import com.wh.creationalpatterns.factorypatterns.dessert.MatchaMousse;
 
+/**
+ * 23种设计模式 - 工厂模式 - 抽象工厂 - 美式甜点工厂
+ */
 public class AmericanDessertFactory implements DessertFactory{
 
     /**
